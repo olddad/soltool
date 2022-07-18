@@ -1,0 +1,63 @@
+[20171115 16:06:46] TEST/A/B   REPLY
+submsg                    = <SOLCLIENT_MAP>/
+{
+        string                    = <SOLCLIENT_STRING>/(24)/123
+}
+ui16                      = <SOLCLIENT_UINT16>/(24)/123
+i16                       = <SOLCLIENT_INT16>/(24)/123
+i32                       = <SOLCLIENT_INT32>/(24)/123
+i64                       = <SOLCLIENT_INT64>/(24)/123
+double                    = <SOLCLIENT_DOUBLE>/(24)/123.000000
+float                     = <SOLCLIENT_FLOAT>/(24)/123.000000
+char                      = <SOLCLIENT_WCHAR>/(24)/a
+string                    = <SOLCLIENT_STRING>/(24)/123
+Barray                    = <SOLCLIENT_BYTEARRAY>/(5)/68 65 6c 6c 6f
+
+[20171115 16:06:46] TEST/A/B   
+submsg                    = <SOLCLIENT_MAP>/
+{
+        string            = <SOLCLIENT_STRING>/(24)/123
+        subsubmsg         = <SOLCLIENT_MAP>/
+        {
+                string    = <SOLCLIENT_STRING>/(24)/123
+#                ui16     = <SOLCLIENT_UINT16>/(24)/123
+        }
+}
+ui16                      = <SOLCLIENT_UINT16>/(24)/123
+
+
+[20171116 19:25:47] TEST/A/B  
+Data = <BIN>/(16)/6d 79 20 61 74 74 61 63 68 65 64 20 64 61 74 61
+
+[20171116 19:25:47] TEST/A/B 
+Data = <XML>/(16)/xml Hello world!
+
+[20171117 16:14:56] TEST/A/B   
+Data = <USER>/(17)/75 73 65 72 20 48 65 6c 6c 6f 20 77 6f 72 6c 64 21
+Data = <XML>/(16)/xml Hello world!
+submsg                    = <SOLCLIENT_MAP>/(15)/
+{
+        string            = <SOLCLIENT_STRING>/(4)/123
+}
+ui16                      = <SOLCLIENT_UINT16>/(2)/123
+i16                       = <SOLCLIENT_INT16>/(2)/123
+i32                       = <SOLCLIENT_INT32>/(4)/123
+i64                       = <SOLCLIENT_INT64>/(8)/123
+double                    = <SOLCLIENT_DOUBLE>/(8)/123.000000
+float                     = <SOLCLIENT_FLOAT>/(4)/123.000000
+char                      = <SOLCLIENT_WCHAR>/(2)/a
+Data = <USERPROP>/(48)/
+{
+        prop1                     = <SOLCLIENT_INT32>/(4)/1
+        prop2                     = <SOLCLIENT_INT32>/(4)/2
+        prop3                     = <SOLCLIENT_STRING>/(5)/test
+}
+
+[20171117 16:14:56] TEST/A/B   
+Data = <USERPROP>/(48)/
+{
+        prop1                     = <SOLCLIENT_INT32>/(4)/1
+        prop2                     = <SOLCLIENT_INT32>/(4)/2
+        prop3                     = <SOLCLIENT_STRING>/(5)/test
+}
+string                    = <SOLCLIENT_STRING>/(4)/123
